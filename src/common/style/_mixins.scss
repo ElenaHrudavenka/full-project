@@ -1,0 +1,24 @@
+@mixin FontPoppins() {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #2D2E46;
+}
+
+@mixin FontSanFrancisco() {
+	font-family: 'SF UI Display', sans-serif;
+}
+
+@mixin ThumbRange() {
+	position: absolute;
+	top: -7px;
+	z-index: 2;
+	height: 20px;
+	width: 20px;
+	text-align: left;
+	margin-left: -11px;
+	cursor: pointer;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+	background-color: #FFF;
+	border-radius: 50%;
+	outline: none;
+}
