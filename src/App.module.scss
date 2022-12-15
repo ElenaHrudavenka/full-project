@@ -1,3 +1,5 @@
+@import './common/style/variables';
+
 * {
   padding: 0;
   margin: 0;
@@ -5,16 +7,10 @@
 }
 
 .App {
-  background-color: #282c34;
+  background-color: $wrapperColor;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-span {
-  margin: 20px 0;
-  color: #8d8c8c;
-  font-size: 1.5em;
+  justify-content: space-between;
 }

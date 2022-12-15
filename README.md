@@ -1,10 +1,10 @@
-#  Name: full-project
+# Name: full-project
 
 This is my education project.
 
 ## Available Scripts
 
-Step 1: You can clone the project from https://github.com/ElenaHrudavenka/full-project. 
+Step 1: You can clone the project from https://github.com/ElenaHrudavenka/full-project.
 
 ### `git clone https://github.com/ElenaHrudavenka/full-project.git`
 

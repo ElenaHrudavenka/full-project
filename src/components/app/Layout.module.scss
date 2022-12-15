@@ -1,0 +1,17 @@
+@import './../../common/style/variables';
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    /*margin: 20px 0;*/
+    color: $mainTextColor;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+.footerBlock {
+}
