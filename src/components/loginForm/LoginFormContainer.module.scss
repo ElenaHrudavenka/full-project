@@ -1,0 +1,33 @@
+@import './../../common/style/variables';
+
+.authForm {
+  margin: 5px 0;
+  /*height: 40vh;*/
+  display: flex;
+  flex-direction: column;
+  .inputBlock__fieldset {
+    border: none;
+  }
+  .authFooterBlock_fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+
+    .rememberMeBlock_fieldset {
+      border: none;
+
+      label {
+        padding: 5px;
+        color: $additionalTextColor;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $additionalTextColor;
+    }
+  }
+}

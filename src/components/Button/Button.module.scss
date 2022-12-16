@@ -1,0 +1,39 @@
+@import './../../common/style/variables';
+@import './../../common/style/mixins';
+
+.button {
+  display: inline-block;
+  width: 100%;
+  margin: 25px 0;
+  line-height: 19px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  @include maimFontStyle;
+  font-weight: bold;
+  transition: 1s linear;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.default {
+  color: $buttonTextColor;
+  background: $buttonColor;
+}
+
+.disabled {
+  transition: none;
+  background: $buttonDisabledColor;
+  color: $buttonDisabledTextColor;
+
+  &:active {
+    transform: none;
+  }
+}
+
+.error {
+
+}
