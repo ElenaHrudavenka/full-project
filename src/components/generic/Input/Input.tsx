@@ -1,24 +1,12 @@
 import React, { DetailedHTMLProps, InputHTMLAttributes, useState } from 'react';
 
-import IconEye from './../../assets/img/eye.svg';
-import IconEyeCrossed from './../../assets/img/eye-crossed.svg';
+import IconEye from '../../../assets/img/eye.svg';
+import IconEyeCrossed from '../../../assets/img/eye-crossed.svg';
 
-import s from './InputContainer.module.scss';
+import s from './Input.module.scss';
+import {InputPropsType, InputType} from "./Input.type";
 
-type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-
-type InputType = 'text' | 'password';
-
-type TextFieldPropsType = DefaultInputPropsType & {
-  id: string;
-  name: string;
-  label?: string;
-  type?: InputType;
-  width?: number;
-  required?: boolean;
-};
-
-export const InputContainer = ({ id, name, width, label, required = true, type = 'text', ...rest }: TextFieldPropsType) => {
+export const Input = ({ id, name, width, label, required = true, type = 'text', ...rest }: InputPropsType) => {
   const [value, setValue] = useState<InputType>(type);
   const [isPassword, setIsPassword] = useState<boolean>(false);
   const inputStyle = {
