@@ -1,9 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import s from "./AuthForm.module.scss";
 import {Input} from "../generic/Input/Input";
 import {Button} from "../generic/Button/Button";
 
 const AuthForm = () => {
+    const [isCheckedRememberMe, setIsCheckedRememberMe] = useState(false);
+    const onChangeRememberMe = () => {
+        setIsCheckedRememberMe(!isCheckedRememberMe);
+    }
+    
     return (
         <form className={s.authForm} action={''}>
             <fieldset className={s.inputBlock__fieldset}>
@@ -28,7 +34,7 @@ const AuthForm = () => {
             </fieldset>
             <fieldset className={s.authFooterBlock_fieldset}>
                 <fieldset className={s.rememberMeBlock_fieldset}>
-                    <input id={'checkBoxRememberMe'} type={'checkbox'} checked={true} onChange={() => {}} />
+                    <input id={'checkBoxRememberMe'} type={'checkbox'} checked={isCheckedRememberMe} onChange={onChangeRememberMe} />
                     <label htmlFor='checkBoxRememberMe'>Remember me</label>
                 </fieldset>
                 <a href=''>Forgot?</a>
