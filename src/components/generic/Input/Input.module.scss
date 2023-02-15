@@ -17,7 +17,7 @@
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    transition: background-color 10000s ease-in-out 0s;
+    box-shadow: inset 100em 1em $wrapperColor;
   }
   /*Change the label position (for autocomplete)*/
   input:-webkit-autofill ~ label {
