@@ -28,6 +28,5 @@ export const Button = ({buttonType = 'default', width, ...rest}: ButtonPropsType
     return <button className={buttonBlock}
                    style={{width: width}}
                    disabled={disabled}
-                   {...rest}
-    ></button>;
+                   {...rest}/>;
 };
