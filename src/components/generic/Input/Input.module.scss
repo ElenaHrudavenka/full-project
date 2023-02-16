@@ -12,6 +12,7 @@
     bottom: 0;
     cursor: pointer;
   }
+
   /*Fix the default browser behavior for autocomplete input*/
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
@@ -19,6 +20,7 @@
   input:-webkit-autofill:active {
     box-shadow: inset 100em 1em $wrapperColor;
   }
+
   /*Change the label position (for autocomplete)*/
   input:-webkit-autofill ~ label {
     top: -10px;
@@ -98,5 +100,23 @@
   input:focus ~ &__bar:after {
     width: 50%;
   }
-
+  &__error {
+    position: relative;
+    display: flex;
+    &::after {
+      content: attr(data-descriptions);
+      position: absolute;
+      width: 100%;
+      padding: 10px 7px;
+      opacity: 0.9;
+      transform: scale(1);
+      text-align: center;
+      outline: 1px solid $buttonDisabledTextColor;
+      border-radius: 10px;
+      background-color: $buttonTextColor;
+      color: $mainTextColor;
+      font-size: 12px;
+      z-index: 1;
+    }
+  }
 }
