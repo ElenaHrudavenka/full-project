@@ -1,13 +1,12 @@
 import { DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import { ValidationRule } from 'react-hook-form';
-import { UseFormRegister } from 'react-hook-form/dist/types/form';
 
 export type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
 
 export type InputType = 'text' | 'password';
 
 export type InputPropsType = DefaultInputPropsType & {
-  register: UseFormRegister<any>;
+  /*register: UseFormRegister<any>;*/
   id: string;
   name: string;
   pattern: string;

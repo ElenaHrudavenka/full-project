@@ -12,27 +12,21 @@
   cursor: pointer;
   @include maimFontStyle;
   font-weight: bold;
-  transition: 1s linear;
-
-  &:active {
-    transform: scale(0.9);
-  }
-}
-
-.default {
+  transition: 200ms linear;
   color: $buttonTextColor;
   background: $buttonColor;
-}
-
-.disabled {
-  transition: none;
-  background: $buttonDisabledColor;
-  color: $buttonDisabledTextColor;
 
   &:active {
-    transform: none;
+    transform: scale(0.99);
   }
-}
 
-.error {
+  &:disabled {
+    transition: none;
+    background: $buttonDisabledColor;
+    color: $buttonDisabledTextColor;
+    border: 1px solid $buttonDisabledTextColor;
+    &:active {
+      transform: none;
+    }
+  }
 }
