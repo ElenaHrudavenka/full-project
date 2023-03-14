@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/full-project/static/css/main.34905255.css",
+    "main.js": "/full-project/static/js/main.109c8280.js",
+    "static/media/eye-crossed.svg": "/full-project/static/media/eye-crossed.d6caf65d922f4bb470ef6095cf253aa0.svg",
+    "static/media/eye.svg": "/full-project/static/media/eye.d5cd59d55cc41f7d31a18bdb779adf0f.svg",
+    "index.html": "/full-project/index.html",
+    "main.34905255.css.map": "/full-project/static/css/main.34905255.css.map",
+    "main.109c8280.js.map": "/full-project/static/js/main.109c8280.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34905255.css",
+    "static/js/main.109c8280.js"
+  ]
+}
